@@ -4,7 +4,7 @@ face_ios_app/FaceEditor/stylegan/stylegan2.pt
 face_ios_app/FaceSite/pytorch/include_arm64
 face_ios_app/FaceSite/pytorch/lib_arm64
 face_ios_app/FaceSite/pytorch/include
-face_ios_app/FaceSite/pytorch/libs
+face_ios_app/FaceSite/pytorch/lib
 
 .idea
 web_server/checkpoints/best_model.pt
