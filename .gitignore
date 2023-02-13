@@ -7,6 +7,10 @@ face_ios_app/FaceSite/pytorch/include
 face_ios_app/FaceSite/pytorch/libs
 
 .idea
-web_server/checkpoints/
+web_server/checkpoints/best_model.pt
+web_server/checkpoints/GPEN-512.pth
+web_server/checkpoints/shape_predictor_68_face_landmarks.dat
+web_server/checkpoints/stylegan2-ffhq-config-e2.pt
 web_server/temp/
 web_server/flask.log
+
