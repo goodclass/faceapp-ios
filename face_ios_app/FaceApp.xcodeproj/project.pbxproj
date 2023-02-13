@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA4F83892652C916000D2C52 /* FaceStyleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F83882652C916000D2C52 /* FaceStyleLabel.swift */; };
+		CA4F838B2652C927000D2C52 /* FaceStyleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F838A2652C927000D2C52 /* FaceStyleImage.swift */; };
+		CA5A2EC0264E1C3C009876A5 /* FaceStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A2EBF264E1C3C009876A5 /* FaceStyleView.swift */; };
+		CA5FA2192679D4A600997ACE /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5FA2182679D4A600997ACE /* ImageUtil.swift */; };
+		CA764A122653918A00F1BBDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA764A112653918A00F1BBDE /* main.m */; };
+		CA9B757F267875F100DCEBD8 /* icon_300.png in Resources */ = {isa = PBXBuildFile; fileRef = CA9B757E267875F100DCEBD8 /* icon_300.png */; };
+		CAA33118264AD60400AAC80D /* AccountUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA33115264AD60400AAC80D /* AccountUtil.swift */; };
+		CAA3311E264AE2A900AAC80D /* BeanUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3311D264AE2A900AAC80D /* BeanUtils.swift */; };
+		CAB40669266FC8B900653DE7 /* add_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAB40668266FC8B900653DE7 /* add_image.jpg */; };
+		CAC442AB2648CAFD0080FE66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC442AA2648CAFD0080FE66 /* AppDelegate.swift */; };
+		CAC442AF2648CAFD0080FE66 /* FaceMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC442AE2648CAFD0080FE66 /* FaceMainView.swift */; };
+		CAC442B22648CAFD0080FE66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC442B02648CAFD0080FE66 /* Main.storyboard */; };
+		CAC442B42648CAFE0080FE66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC442B32648CAFE0080FE66 /* Assets.xcassets */; };
+		CAC442B72648CAFE0080FE66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC442B52648CAFE0080FE66 /* LaunchScreen.storyboard */; };
+		CAC442BF264914470080FE66 /* FaceMainImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC442BE264914470080FE66 /* FaceMainImage.swift */; };
+		CAC442C326491C0D0080FE66 /* face_latent in Resources */ = {isa = PBXBuildFile; fileRef = CAC442C226491C0D0080FE66 /* face_latent */; };
+		CAD072C4266B830000089A3A /* torchutil.mm in Sources */ = {isa = PBXBuildFile; fileRef = CAD072B9266B830000089A3A /* torchutil.mm */; };
+		CAD072C5266B830000089A3A /* libtorch_cpu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD072BB266B830000089A3A /* libtorch_cpu.a */; };
+		CAD072C6266B830000089A3A /* libtorch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD072BC266B830000089A3A /* libtorch.a */; };
+		CAD072C7266B830000089A3A /* libcpuinfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD072BD266B830000089A3A /* libcpuinfo.a */; };
+		CAD072C8266B830000089A3A /* libXNNPACK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD072BE266B830000089A3A /* libXNNPACK.a */; };
+		CAD072C9266B830000089A3A /* libpthreadpool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD072BF266B830000089A3A /* libpthreadpool.a */; };
+		CAD072CA266B830000089A3A /* libc10.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD072C0266B830000089A3A /* libc10.a */; };
+		CAD072CB266B830000089A3A /* libeigen_blas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD072C1266B830000089A3A /* libeigen_blas.a */; };
+		CAD072CC266B830000089A3A /* libclog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD072C2266B830000089A3A /* libclog.a */; };
+		CAD072CD266B830000089A3A /* libpytorch_qnnpack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD072C3266B830000089A3A /* libpytorch_qnnpack.a */; };
+		CAD072D3266B886E00089A3A /* stylegan in Resources */ = {isa = PBXBuildFile; fileRef = CAD072D2266B886E00089A3A /* stylegan */; };
+		EABBDE3094EE2307721FEE0B /* Pods_FaceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F608623F937C10D0B8F372 /* Pods_FaceApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FDF104852AB9BDDE167B4A5 /* Pods-FaceEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceEditor.debug.xcconfig"; path = "Target Support Files/Pods-FaceEditor/Pods-FaceEditor.debug.xcconfig"; sourceTree = "<group>"; };
+		52F608623F937C10D0B8F372 /* Pods_FaceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D290AA15F6C0A767000CC92 /* Pods-FaceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceApp.debug.xcconfig"; path = "Target Support Files/Pods-FaceApp/Pods-FaceApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C9532AB73F0D85EDD34BCD1D /* Pods-FaceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceApp.release.xcconfig"; path = "Target Support Files/Pods-FaceApp/Pods-FaceApp.release.xcconfig"; sourceTree = "<group>"; };
+		CA4F83882652C916000D2C52 /* FaceStyleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceStyleLabel.swift; sourceTree = "<group>"; };
+		CA4F838A2652C927000D2C52 /* FaceStyleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceStyleImage.swift; sourceTree = "<group>"; };
+		CA534CA5264A6CDC002286BF /* FaceEditor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaceEditor-Bridging-Header.h"; sourceTree = "<group>"; };
+		CA5A2EBF264E1C3C009876A5 /* FaceStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceStyleView.swift; sourceTree = "<group>"; };
+		CA5FA2182679D4A600997ACE /* ImageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtil.swift; sourceTree = "<group>"; };
+		CA764A112653918A00F1BBDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA9B757E267875F100DCEBD8 /* icon_300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_300.png; sourceTree = "<group>"; };
+		CAA33115264AD60400AAC80D /* AccountUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountUtil.swift; sourceTree = "<group>"; };
+		CAA3311D264AE2A900AAC80D /* BeanUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanUtils.swift; sourceTree = "<group>"; };
+		CAB40668266FC8B900653DE7 /* add_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = add_image.jpg; sourceTree = "<group>"; };
+		CAC442A72648CAFD0080FE66 /* FaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC442AA2648CAFD0080FE66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAC442AE2648CAFD0080FE66 /* FaceMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMainView.swift; sourceTree = "<group>"; };
+		CAC442B12648CAFD0080FE66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAC442B32648CAFE0080FE66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAC442B62648CAFE0080FE66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAC442B82648CAFE0080FE66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAC442BE264914470080FE66 /* FaceMainImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMainImage.swift; sourceTree = "<group>"; };
+		CAC442C226491C0D0080FE66 /* face_latent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = face_latent; path = FaceEditor/face_latent; sourceTree = SOURCE_ROOT; };
+		CAD072B8266B830000089A3A /* torchutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = torchutil.h; sourceTree = "<group>"; };
+		CAD072B9266B830000089A3A /* torchutil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = torchutil.mm; sourceTree = "<group>"; };
+		CAD072BB266B830000089A3A /* libtorch_cpu.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtorch_cpu.a; sourceTree = "<group>"; };
+		CAD072BC266B830000089A3A /* libtorch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtorch.a; sourceTree = "<group>"; };
+		CAD072BD266B830000089A3A /* libcpuinfo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcpuinfo.a; sourceTree = "<group>"; };
+		CAD072BE266B830000089A3A /* libXNNPACK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXNNPACK.a; sourceTree = "<group>"; };
+		CAD072BF266B830000089A3A /* libpthreadpool.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpthreadpool.a; sourceTree = "<group>"; };
+		CAD072C0266B830000089A3A /* libc10.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libc10.a; sourceTree = "<group>"; };
+		CAD072C1266B830000089A3A /* libeigen_blas.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libeigen_blas.a; sourceTree = "<group>"; };
+		CAD072C2266B830000089A3A /* libclog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libclog.a; sourceTree = "<group>"; };
+		CAD072C3266B830000089A3A /* libpytorch_qnnpack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpytorch_qnnpack.a; sourceTree = "<group>"; };
+		CAD072D2266B886E00089A3A /* stylegan */ = {isa = PBXFileReference; lastKnownFileType = folder; path = stylegan; sourceTree = "<group>"; };
+		F80DBD7E68C650A58207DB87 /* Pods-FaceEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceEditor.release.xcconfig"; path = "Target Support Files/Pods-FaceEditor/Pods-FaceEditor.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAC442A42648CAFD0080FE66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD072CB266B830000089A3A /* libeigen_blas.a in Frameworks */,
+				CAD072C6266B830000089A3A /* libtorch.a in Frameworks */,
+				CAD072C5266B830000089A3A /* libtorch_cpu.a in Frameworks */,
+				CAD072CA266B830000089A3A /* libc10.a in Frameworks */,
+				CAD072C9266B830000089A3A /* libpthreadpool.a in Frameworks */,
+				CAD072C7266B830000089A3A /* libcpuinfo.a in Frameworks */,
+				CAD072CC266B830000089A3A /* libclog.a in Frameworks */,
+				CAD072CD266B830000089A3A /* libpytorch_qnnpack.a in Frameworks */,
+				CAD072C8266B830000089A3A /* libXNNPACK.a in Frameworks */,
+				EABBDE3094EE2307721FEE0B /* Pods_FaceApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		085ACBAE5C6F32ED061AF024 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52F608623F937C10D0B8F372 /* Pods_FaceApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51C8EE110DE1CA3AEB6567B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FDF104852AB9BDDE167B4A5 /* Pods-FaceEditor.debug.xcconfig */,
+				F80DBD7E68C650A58207DB87 /* Pods-FaceEditor.release.xcconfig */,
+				5D290AA15F6C0A767000CC92 /* Pods-FaceApp.debug.xcconfig */,
+				C9532AB73F0D85EDD34BCD1D /* Pods-FaceApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CAA3310F264AD1FD00AAC80D /* main */ = {
+			isa = PBXGroup;
+			children = (
+				CA764A112653918A00F1BBDE /* main.m */,
+				CA534CA5264A6CDC002286BF /* FaceEditor-Bridging-Header.h */,
+				CAC442AA2648CAFD0080FE66 /* AppDelegate.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		CAA33110264AD20A00AAC80D /* util */ = {
+			isa = PBXGroup;
+			children = (
+				CAA3311D264AE2A900AAC80D /* BeanUtils.swift */,
+				CAA33115264AD60400AAC80D /* AccountUtil.swift */,
+				CA5FA2182679D4A600997ACE /* ImageUtil.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		CAA33111264AD37B00AAC80D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA9B757E267875F100DCEBD8 /* icon_300.png */,
+				CAB40668266FC8B900653DE7 /* add_image.jpg */,
+				CAC442B82648CAFE0080FE66 /* Info.plist */,
+				CAC442B32648CAFE0080FE66 /* Assets.xcassets */,
+				CAC442B02648CAFD0080FE66 /* Main.storyboard */,
+				CAC442B52648CAFE0080FE66 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CAA33113264AD3E500AAC80D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CAC442AE2648CAFD0080FE66 /* FaceMainView.swift */,
+				CA5A2EBF264E1C3C009876A5 /* FaceStyleView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CAA33114264AD51600AAC80D /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				CAC442BE264914470080FE66 /* FaceMainImage.swift */,
+				CA4F83882652C916000D2C52 /* FaceStyleLabel.swift */,
+				CA4F838A2652C927000D2C52 /* FaceStyleImage.swift */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		CAC4429E2648CAFD0080FE66 = {
+			isa = PBXGroup;
+			children = (
+				CAD072B3266B827F00089A3A /* FaceSite */,
+				CAC442A92648CAFD0080FE66 /* FaceEditor */,
+				CAC442A82648CAFD0080FE66 /* Products */,
+				51C8EE110DE1CA3AEB6567B2 /* Pods */,
+				085ACBAE5C6F32ED061AF024 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CAC442A82648CAFD0080FE66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAC442A72648CAFD0080FE66 /* FaceApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAC442A92648CAFD0080FE66 /* FaceEditor */ = {
+			isa = PBXGroup;
+			children = (
+				CAA3310F264AD1FD00AAC80D /* main */,
+				CAA33113264AD3E500AAC80D /* view */,
+				CAA33114264AD51600AAC80D /* tool */,
+				CAA33110264AD20A00AAC80D /* util */,
+				CAA33111264AD37B00AAC80D /* Resources */,
+				CAC442C226491C0D0080FE66 /* face_latent */,
+				CAD072D2266B886E00089A3A /* stylegan */,
+			);
+			path = FaceEditor;
+			sourceTree = "<group>";
+		};
+		CAD072B3266B827F00089A3A /* FaceSite */ = {
+			isa = PBXGroup;
+			children = (
+				CAD072B4266B828C00089A3A /* pytorch */,
+			);
+			path = FaceSite;
+			sourceTree = "<group>";
+		};
+		CAD072B4266B828C00089A3A /* pytorch */ = {
+			isa = PBXGroup;
+			children = (
+				CAD072BA266B830000089A3A /* lib */,
+				CAD072B8266B830000089A3A /* torchutil.h */,
+				CAD072B9266B830000089A3A /* torchutil.mm */,
+			);
+			path = pytorch;
+			sourceTree = "<group>";
+		};
+		CAD072BA266B830000089A3A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CAD072BB266B830000089A3A /* libtorch_cpu.a */,
+				CAD072BC266B830000089A3A /* libtorch.a */,
+				CAD072BD266B830000089A3A /* libcpuinfo.a */,
+				CAD072BE266B830000089A3A /* libXNNPACK.a */,
+				CAD072BF266B830000089A3A /* libpthreadpool.a */,
+				CAD072C0266B830000089A3A /* libc10.a */,
+				CAD072C1266B830000089A3A /* libeigen_blas.a */,
+				CAD072C2266B830000089A3A /* libclog.a */,
+				CAD072C3266B830000089A3A /* libpytorch_qnnpack.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAC442A62648CAFD0080FE66 /* FaceApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAC442BB2648CAFE0080FE66 /* Build configuration list for PBXNativeTarget "FaceApp" */;
+			buildPhases = (
+				587050F90CBAE5409C2EA110 /* [CP] Check Pods Manifest.lock */,
+				CAC442A32648CAFD0080FE66 /* Sources */,
+				CAC442A42648CAFD0080FE66 /* Frameworks */,
+				CAC442A52648CAFD0080FE66 /* Resources */,
+				57D1FAC9B12093764DBF5612 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceApp;
+			productName = FaceEditor;
+			productReference = CAC442A72648CAFD0080FE66 /* FaceApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAC4429F2648CAFD0080FE66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CAC442A62648CAFD0080FE66 = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = CAC442A22648CAFD0080FE66 /* Build configuration list for PBXProject "FaceApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAC4429E2648CAFD0080FE66;
+			productRefGroup = CAC442A82648CAFD0080FE66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAC442A62648CAFD0080FE66 /* FaceApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAC442A52648CAFD0080FE66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC442B72648CAFE0080FE66 /* LaunchScreen.storyboard in Resources */,
+				CA9B757F267875F100DCEBD8 /* icon_300.png in Resources */,
+				CAB40669266FC8B900653DE7 /* add_image.jpg in Resources */,
+				CAD072D3266B886E00089A3A /* stylegan in Resources */,
+				CAC442C326491C0D0080FE66 /* face_latent in Resources */,
+				CAC442B42648CAFE0080FE66 /* Assets.xcassets in Resources */,
+				CAC442B22648CAFD0080FE66 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57D1FAC9B12093764DBF5612 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceApp/Pods-FaceApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceApp/Pods-FaceApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaceApp/Pods-FaceApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		587050F90CBAE5409C2EA110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAC442A32648CAFD0080FE66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD072C4266B830000089A3A /* torchutil.mm in Sources */,
+				CAC442AF2648CAFD0080FE66 /* FaceMainView.swift in Sources */,
+				CA5A2EC0264E1C3C009876A5 /* FaceStyleView.swift in Sources */,
+				CAC442AB2648CAFD0080FE66 /* AppDelegate.swift in Sources */,
+				CAC442BF264914470080FE66 /* FaceMainImage.swift in Sources */,
+				CA4F838B2652C927000D2C52 /* FaceStyleImage.swift in Sources */,
+				CAA33118264AD60400AAC80D /* AccountUtil.swift in Sources */,
+				CA764A122653918A00F1BBDE /* main.m in Sources */,
+				CA5FA2192679D4A600997ACE /* ImageUtil.swift in Sources */,
+				CAA3311E264AE2A900AAC80D /* BeanUtils.swift in Sources */,
+				CA4F83892652C916000D2C52 /* FaceStyleLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CAC442B02648CAFD0080FE66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAC442B12648CAFD0080FE66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAC442B52648CAFE0080FE66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAC442B62648CAFE0080FE66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAC442B92648CAFE0080FE66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAC442BA2648CAFE0080FE66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAC442BC2648CAFE0080FE66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D290AA15F6C0A767000CC92 /* Pods-FaceApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.2;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers\"",
+					"$(PROJECT_DIR)/FaceSite/pytorch/include",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/FaceEditor/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaceSite/pytorch/lib",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-force_load",
+					"$(PROJECT_DIR)/FaceSite/pytorch/lib/libtorch_cpu.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.face.FaceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaceEditor/main/FaceEditor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CAC442BD2648CAFE0080FE66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9532AB73F0D85EDD34BCD1D /* Pods-FaceApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.2;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers\"",
+					"$(PROJECT_DIR)/FaceSite/pytorch/include",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/FaceEditor/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaceSite/pytorch/lib",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-force_load",
+					"$(PROJECT_DIR)/FaceSite/pytorch/lib/libtorch_cpu.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.face.FaceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaceEditor/main/FaceEditor-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAC442A22648CAFD0080FE66 /* Build configuration list for PBXProject "FaceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC442B92648CAFE0080FE66 /* Debug */,
+				CAC442BA2648CAFE0080FE66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAC442BB2648CAFE0080FE66 /* Build configuration list for PBXNativeTarget "FaceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC442BC2648CAFE0080FE66 /* Debug */,
+				CAC442BD2648CAFE0080FE66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAC4429F2648CAFD0080FE66 /* Project object */;
+}

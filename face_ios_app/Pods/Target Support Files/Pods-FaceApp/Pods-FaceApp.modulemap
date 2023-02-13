@@ -1,0 +1,6 @@
+framework module Pods_FaceApp {
+  umbrella header "Pods-FaceApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
